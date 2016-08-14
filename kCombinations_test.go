@@ -2,6 +2,7 @@ package kCombinations_test
 
 import (
 	"testing"
+	"fmt"
 
 	"github.com/Ramshackle-Jamathon/kCombinations"
 	"github.com/stretchr/testify/assert"
