@@ -1,56 +1,8 @@
-package main
+package kCombinations
 
 import (  
     "fmt"
 )
-
-func main(){  
-    for combo := range GenerateCombinationsString([]string{"1","2","3","4"}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsInt([]int{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsInt8([]int8{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsInt16([]int16{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsInt32([]int32{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsInt64([]int64{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsUint([]uint{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsUint8([]uint8{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsUint16([]uint16{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsUint32([]uint32{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsUint64([]uint64{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsFloat32([]float32{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsFloat64([]float64{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsComplex64([]complex64{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-    for combo := range GenerateCombinationsComplex128([]complex128{1,2,3,4}, 2) {
-        fmt.Println(combo)
-    }
-}
 
 func GenerateCombinationsString(data []string, length int) <-chan []string {  
     c := make(chan []string)
