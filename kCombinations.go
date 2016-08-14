@@ -1,8 +1,5 @@
 package kCombinations
 
-import (  
-    "fmt"
-)
 
 func GenerateCombinationsString(data []string, length int) <-chan []string {  
     c := make(chan []string)
