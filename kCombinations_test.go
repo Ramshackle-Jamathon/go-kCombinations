@@ -4,7 +4,7 @@ import (
 	"testing"
 	"fmt"
 
-	"github.com/Ramshackle-Jamathon/kCombinations"
+	"github.com/Ramshackle-Jamathon/go-kCombinations"
 	"github.com/stretchr/testify/assert"
 )
 
